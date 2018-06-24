@@ -1,0 +1,36 @@
+# See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+#        _
+#       ( )
+#        H
+#        H
+#       _H_
+#    .-'-.-'-.
+#   /         \
+#  |           |
+#  |   .-------'._
+#  |  / /  '.' '. \
+#  |  \ \ @   @ / /
+#  |   '---------'
+#  |    _______|
+#  |  .'-+-+-+|
+#  |  '.-+-+-+|  ------ KILL ALL HUMANS!
+#  |    """""" |
+#  '-.__   __.-'
+#       """  sul
+#
+#   Art by Sulliwan Sucks
+
+# # Open site for spiders
+# User-agent: Yandex
+# Allow: /
+# Host: devmeetups.ru
+#
+# User-agent: Googlebot
+# Allow: /
+#
+# User-agent: *
+# Disallow:
+
+# Ban all spiders from the entire site
+User-agent: *
+Disallow: /
