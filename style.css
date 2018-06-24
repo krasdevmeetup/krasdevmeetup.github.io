@@ -1,0 +1,149 @@
+/*-- Reset browser defaults --*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size: 100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/*-- Embedding fonts --*/
+
+@font-face {
+  font-family: 'HeliosCond';
+  src: url('./webfonts/helioscondc-webfont.eot');
+  src: url('./webfonts/helioscondc-webfont.eot') format('embedded-opentype'),
+       url('./webfonts/helioscondc-webfont.woff') format('woff'),
+       url('./webfonts/helioscondc-webfont.ttf') format('truetype'),
+       url('./webfonts/helioscondc-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HeliosLight';
+  src: url('./webfonts/helioslightc-webfont.eot');
+  src: url('./webfonts/helioslightc-webfont.eot') format('embedded-opentype'),
+       url('./webfonts/helioslightc-webfont.woff') format('woff'),
+       url('./webfonts/helioslightc-webfont.ttf') format('truetype'),
+       url('./webfonts/helioslightc-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*-- General styles --*/
+
+body {
+  color: #333330;
+  font-family: "HeliosLight", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+h2 {
+  font-size: 1.4em;
+  font-weight: normal;
+  line-height: 1.6em;
+  font-family: "HeliosCond", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.2em;
+  letter-spacing: 0.05em;
+}
+a { color: #007dc5; }
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#header { background: #f6eec9 url('./images/darkbeige-noise.jpg') bottom repeat-x; }
+#header .wrapper {
+  background: url('./images/darkbeige-highlight.jpg') bottom no-repeat;
+  padding: 4.8em 200px 2.4em;
+}
+.logo {
+  margin-left: 80px;
+  margin-bottom: 2.4em;
+}
+#header p {
+  color: #947430;
+  background: url('./images/brackets.png') center center no-repeat;
+  width: 600px; min-height: 73px;
+  padding: 0 41px;
+  margin-left: -41px;
+  text-align: center;
+  text-shadow: 0px 1px 2px #fff;
+}
+
+#upcoming {
+  background: #f5f2e0 url('./images/beige-noise.jpg') bottom repeat-x;
+  padding: 2.4em 0;
+  border-top: 1px solid #fbf9f2;
+  overflow: hidden;
+}
+#upcoming h2 { margin-bottom: 1.2em; }
+#upcoming p { margin-left: 124px; }
+#upcoming p.location { margin-top: 1em; }
+
+.date {
+  background: url('./images/calendar-bg.png') left bottom no-repeat;
+  width: 100px;
+  margin-top: -0.8em;
+  padding-right: 7px;
+  padding-bottom: 12px;
+  text-align: center;
+  display: block;
+  float: left;
+}
+.date .month {
+  color: #fff;
+  background: #a63614;
+  width: 100px;
+  padding-top: 2px;
+  display: block;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.date .day {
+  display: block;
+  font-size: 3.2em;
+  font-weight: bold;
+  margin: 0.5em 0 0.3em;
+}
+.date .time {
+  width: 70px;
+  margin-left: 15px;
+  border-top: 1px solid #ccc;
+  display: block;
+}
+
+#content {
+  background: white url('./images/white-noise.gif');
+  padding: 2.4em 0 0;
+  border-top: 1px solid #fff;
+}
+#content p { margin-bottom: 1.5em; }
+
+#footer {
+  background: url('./images/white-noise.gif');
+  padding: 2em 0;
+  font-size: 0.8em;
+  overflow: hidden;
+}
+#footer .wrapper {
+  padding: 0.5em 4em 0;
+  border-top: 1px solid #ccc;
+}
+#footer p { float: left; }
+#footer p.creators { float: right; }

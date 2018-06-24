@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Красноярск, митап, разработка, обсуждения, программирование, веб, администрирование" />
+
+  <title>Дев-митапы в Красноярске</title>
+  <link href="./style.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="header">
+    <div class="wrapper">
+      <h1 class="logo">
+        <a href="/">
+          <img src="./images/logo.png" alt="Дев-митапы">
+        </a>
+      </h1>
+    
+      <p>
+        Еженедельные неформальные встречи разработчиков.
+        Мы встречаемся, чтобы делиться опытом, обсуждать интересные темы,
+        вместе создавать проекты и общаться с единомышленниками.
+      </p>
+    </div>
+  </div>
+
+  <div id="upcoming">
+    <div class="wrapper">
+      <h2>Следующая встреча:</h2>
+        <div class="date">
+          <span class="month"></span>
+          <span class="day"></span>
+          <span class="time">14:00</span>
+        </div>
+
+        <!--<p>Тема и место следующей встречи находится в обсуждении.
+          <a href="https://groups.google.com/forum/?fromgroups#!forum/krasnoyarsk-dev-meetups">Присоединяйтесь.</a>
+        </p>-->
+        <p class="location">Место встречи:
+          <a href="http://2gis.ru/krasnoyarsk/firm/985690699627166/callout/92.861713%2C56.009641%2C18/center/92.852293%2C56.009287/zoom/16" target="_blank">Traveler`s Coffee на Карла Маркса, 135.</a>
+        </p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    // Calculate next meetup date
+    var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
+      'Октябрь', 'Ноябрь', 'Декабрь'];
+    var upcoming = new Date();
+    while (upcoming.getDay() !== 6)
+      upcoming.setDate(upcoming.getDate() + 1);
+    document.querySelector('#upcoming .month').innerHTML = months[upcoming.getMonth()].toUpperCase();
+    document.querySelector('#upcoming .day').innerHTML = upcoming.getDate();
+  </script>
+
+  <div id="content">
+    <div class="wrapper">
+      <h2>Для кого предназначены митапы?</h2>
+
+      <p>
+        В первую очередь для специалистов IT-сферы – программистов, веб-технологов
+        и системных администраторов. Это обстоятельство определило основные темы
+        наших встреч: языки программирования, проектирование приложений, веб-технологии
+        и администрирование серверов. В то же время мы стремимся постоянно расширять круг участников:
+        к нам в гости приходили дизайнеры, иллюстраторы, менеджеры и молодые предприниматели.
+      </p>
+
+      <p>
+        Дев-митапы являются открытым сообществом, и мы всегда рады видеть как профессионалов, так и новичков.
+      </p>
+
+      <h2>Как устроены встречи?</h2>
+
+      <p>
+        Анонсы митапов публикуются заранее в нашей <a href="https://groups.google.com/forum/#!forum/krasnoyarsk-dev-meetups">Гугл-группе</a>.
+        Каждый участник может высказать пожелания по теме встречи, либо предложить собственный доклад.
+        Главная тема встречи определяется голосованием.
+      </p>
+
+      <p>
+        Митапы проходят каждую субботу в Traveler`s Coffee на Карла Маркса, 135, в дружеской неформальной обстановке.
+        За недолгую историю мероприятий был выработан определенный регламент:
+        сначала участники по желанию делятся рабочими успехами или неудачами за неделю,
+        затем прослушиваются подготовленные доклады, и в конце происходит свободное обсуждение.
+        Наши основные принципы – открытость, взаимопомощь и заинтересованность в профессиональном росте!
+      </p>
+
+      <h2>Как к нам присоединиться?</h2>
+
+      <p>
+        Никаких ограничеий по вступлению в группу нет. Всё зависит от вашего стремления к общению,
+        новым знаниям и желания поделиться своим опытом с другими.
+        Мы с одинаковым удовольствием обсудим экзотические языки программирования
+        (или экзотический иностранный язык, что мелочиться), вашу бизнес-идею,
+        рассказ о новых визуальных технологиях и другую интересную информацию.
+      </p>
+
+      <h2>Наше сообщество</h2>
+
+      <p>
+        Помимо митапов, мы проводим различные тематические мероприятия:
+        <a href="https://groups.google.com/d/topic/krasnoyarsk-dev-meetups/61T2P_IXOHg/discussion">кофейный коворкинг</a>,
+        <a href="https://groups.google.com/d/topic/krasnoyarsk-dev-meetups/HGKwhFN1who/discussion">воркшопы</a>,
+        <a href="https://groups.google.com/group/krasnoyarsk-dev-meetups/browse_thread/thread/ca0bf8442033c9f5">мастер-классы</a>.
+      </p>
+
+      <p>
+        В нашей <a href="https://groups.google.com/forum/#!forum/krasnoyarsk-dev-meetups">Гугл-группе</a> можно найти анонсы предстоящих встреч и мероприятий,
+        а также обсуждения на тему. А оперативную информацию можно получать в <a href="https://twitter.com/#!/krasdevmeetups">Твиттере</a>.
+      </p>
+
+      <h2>Фотографии</h2>
+      <div id="flickr-photos">
+        <!-- Start of Flickr Badge -->
+        <style type="text/css"> 
+          .flickr_badge_image { margin:0px;display:inline; }
+          .flickr_badge_image img { border: 1px solid #666666 !important; padding:1px; margin:2px; }
+          #flickr_badge_wrapper { text-align:center; }
+        </style>
+        <div id="flickr_badge_wrapper">
+          <script type="text/javascript" src="https://www.flickr.com/badge_code_v2.gne?count=5&display=latest&size=t&layout=x&source=group&group=1758770@N24"></script>
+          <center>
+            <small>Created with <a href="http://www.flickrbadge.com">flickr badge</a>.</small>
+          </center>
+        </div>
+        <!-- End of Flickr Badge -->
+      </div>
+    </div>
+  </div>
+  
+  <footer id="footer">
+    <div class="wrapper">
+      <p>Красноярск 2012-2015 &copy; <a href="mailto:suor.web@gmail.com">Обратная связь</a>.</p>
+      <p class="creators">Дизайн от <a href="https://twitter.com/#!/aleksey">Алексея Пономарёва</a>.</p>
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-26208949-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+    </div>
+  </footer>
+</body>
+
+</html>
