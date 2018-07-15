@@ -41,9 +41,10 @@
         <!--<p>Тема и место следующей встречи находится в обсуждении.
           <a href="https://groups.google.com/forum/?fromgroups#!forum/krasnoyarsk-dev-meetups">Присоединяйтесь.</a>
         </p>-->
-        <p class="location">Место встречи:
+        <!-- <p class="location">Место встречи:
           <a href="https://2gis.ru/krasnoyarsk/firm/70000001020701400?queryState=center%2F92.872828%2C56.010924%2Fzoom%2F17" target="_blank">Wood coffee company на Карла Маркса, 56.</a>
-        </p>
+        </p> -->
+        <p>В это воскресенье встреча не состоится.<br>Она переносится на&nbsp;22&nbsp;июля.</p>
     </div>
   </div>
   <script type="text/javascript">
@@ -51,6 +52,7 @@
     var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
       'Октябрь', 'Ноябрь', 'Декабрь'];
     var upcoming = new Date();
+    upcoming.setDate(upcoming.getDate() + 1); // TODO remove
     while (upcoming.getDay() !== 0)
       upcoming.setDate(upcoming.getDate() + 1);
     document.querySelector('#upcoming .month').innerHTML = months[upcoming.getMonth()].toUpperCase();
