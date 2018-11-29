@@ -33,7 +33,7 @@
         <div class="date">
           <span class="month"></span>
           <span class="day"></span>
-          <span class="time">18:00</span>
+          <span class="time">14:00</span>
         </div>
 
         <!--<p>Тема и место следующей встречи находится в обсуждении.
@@ -52,7 +52,7 @@
     // Calculate next meetup date
     var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
     var upcoming = new Date();
-    while (upcoming.getDay() !== 0)
+    while (upcoming.getDay() !== 6)
       upcoming.setDate(upcoming.getDate() + 1);
     document.querySelector('#upcoming .month').innerHTML = months[upcoming.getMonth()].toUpperCase();
     document.querySelector('#upcoming .day').innerHTML = upcoming.getDate();
